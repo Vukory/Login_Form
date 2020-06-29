@@ -1,4 +1,4 @@
-# registration
+# Registration Form
 
 ## Project setup
 ```
