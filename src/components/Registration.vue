@@ -63,7 +63,7 @@
         />
       </div>
       <div v-if="!passwordsMatch()" id="errors">The passwords do not match.</div>
-      <button>Submit</button>
+      <input class="submit_btn" type="submit" value="Submit" :disabled="!passwordsMatch()" />
     </form>
   </div>
 </template>
@@ -129,7 +129,7 @@ input {
   border: none;
 }
 
-button {
+.submit-btn {
   border: none;
   border-radius: 1em;
   width: 8em;
@@ -138,7 +138,7 @@ button {
   color: #e2e0c1;
 }
 
-button:hover {
+.submit-btn:hover {
   background-color: #64806e;
   cursor: pointer;
 }
